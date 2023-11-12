@@ -1,0 +1,63 @@
+insert into pelanggan (nama, alamat, no_hp, jenis_kelamin) values
+("Ikhwal", "Jambi", "081234567890", "Laki-Laki"),
+("Febriyo", "Padang", "082134567890", "Laki-Laki"),
+("Pratama", "Bukit_Tinggi", "083124567890", "Laki-Laki"),
+("Tessa", "Sungai_Penuh", "084123567890", "Perempuan"),
+("Yanti", "Solok", "085123467890", "Perempuan"),
+("Dilla", "Medan", "086123457890", "Perempuan"),
+("Wawan", "Payakumbuh", "087123456890", "Laki-Laki"),
+("Putri", "Jakarta", "088123456790", "Perempuan"),
+("Salsa", "Bandung", "089123456780", "perempuan"),
+("Gilang", "Bali", "080123456789", "Laki-Laki");
+
+insert into kategori (nama_kategori) values
+("Pakaian"),
+("Elektronik"),
+("Alat Tulis"),
+("Olahraga"),
+("Aksesoris"),
+("Alat Musik"),
+("Alat Memasak"),
+("Alat Mendi"),
+("Alat Shalat"),
+("Furnitur");
+
+insert into barang (nama_barang, harga_barang, stok_barang, kategori_id) values
+("Kemeja", 120000, 20, 1),
+("Kaos", 80000, 23, 1),
+("Televisi", 300000, 10, 2),
+("Kulkas", 450000, 14, 2),
+("Buku", 6000, 87, 3),
+("Pensil", 3000, 120, 3),
+("Raket", 600000, 12, 4),
+("Bola", 100000, 77, 4),
+("Jam Tangan", 150000, 19, 5),
+("Kaca Mata", 40000, 31, 5),
+("Gitar", 250000, 18, 6),
+("Piano", 225000, 11, 6),
+("Kompor", 40000, 17, 7),
+("Panci", 20000, 30, 7),
+("Sabun", 20000, 25, 8),
+("Shampo", 11000, 60, 8),
+("Sajadah", 200000, 90, 8),
+("Mukena", 160000, 40, 8),
+("Meja", 100000, 40, 10),
+("Kursi", 50000, 50, 10);
+
+insert into transaksi (tanggal_transaksi, total_pembayaran, jumlah_pembelian, pelanggan_id, barang_id) values
+("2023-11-10", 240000, 2, 2, 1),
+("2023-11-10", 240000, 3, 3, 2),
+("2023-11-10", 450000, 1, 4, 4),
+("2023-10-09", 60000, 10, 5, 5),
+("2023-10-09", 600000, 1, 1, 7),
+("2023-10-08", 150000, 1, 6, 9),
+("2023-09-08", 250000, 1, 7, 11),
+("2023-09-07", 80000, 2, 8, 13),
+("2023-09-07", 33000, 3, 9, 16),
+("2023-08-07", 200000, 1, 10, 17),
+("2023-08-07", 100000, 1, 2, 19),
+("2023-08-06", 300000, 1, 4, 3),
+("2023-07-06", 45000, 15, 3, 6),
+("2023-07-05", 40000, 2, 6, 14),
+("2023-07-04", 225000, 1, 1, 12),
+("2023-07-03", 200000, 4, 1, 20);
